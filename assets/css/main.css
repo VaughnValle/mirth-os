@@ -2180,7 +2180,7 @@ ul.actions.special {
 }
 
 .homepage #header {
-  height: 35em;
+  height: 37em;
 }
 
 /* Logo */
@@ -3105,8 +3105,8 @@ ul.actions.special {
 /* CUSTOM */
 #int-container {
   margin: unset;
-  padding-left: 3%;
-  padding-right: 3%;
+  padding-left: 2%;
+  padding-right: 2%;
   width: 100%;
 }
 
@@ -3117,27 +3117,68 @@ ul.actions.special {
   flex-direction: row;
   text-align: left;
   flex-wrap: wrap;
-  margin-bottom: 100px;
+  margin-bottom: 10em;
+  justify-content: center;
 }
 
 .flex-left,
 .flex-right {
-  margin: 0;
+  margin-right: 1.1em;
 }
 
 .flex-left {
   flex-grow: 1;
-  flex-basis: calc(60% - 20px);
+  flex-basis: calc(55% - 20px);
   min-width: 300px;
 }
 
 .flex-left img {
   display: block;
-  max-width: 95%;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .flex-right {
   flex-grow: 1;
-  flex-basis: calc(40% - 30px);
+  flex-basis: calc(45% - 30px);
   min-width: 300px;
+}
+
+.themes {
+  position: relative;
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 6em;
+  justify-content: center;
+}
+
+.themes .flex-left {
+  flex-grow: 1;
+  flex-basis: calc(50% - 20px);
+  min-width: 9em;
+  max-width: 12em;
+  margin-right: 2em;
+}
+
+.themes .flex-right {
+  flex-grow: 1;
+  flex-basis: calc(50% - 22px);
+  min-width: 9em;
+  max-width: 12em;
+}
+
+.themes .button.large {
+  background: #262932 url(images/overlay.png);
+  font-size: calc(0.5em + 0.4vw);
+  border: 1px solid white;
+}
+
+.themes li {
+  padding-top: 1.2em;
+}
+
+.themes #tryme {
+  position: absolute;
+  top: -2em;
 }
