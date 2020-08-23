@@ -2412,7 +2412,7 @@ ul.actions.special {
   background: var(--bg1) url("images/overlay.png");
   color: var(--fg1);
   color: var(--fg1);
-  padding-bottom: 6em;
+  padding-bottom: 1em;
 }
 
 #footer h1,
@@ -2489,9 +2489,9 @@ ul.actions.special {
 }
 
 #footer header.style1 {
-  padding-bottom: 6em;
-  margin-bottom: 6em;
-  border-bottom: solid 1px var(--bg1);
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 4em;
 }
 
 #footer header.style1 h2 {
@@ -2518,8 +2518,8 @@ ul.actions.special {
 
 #copyright {
   text-align: center;
-  padding-top: 6em;
-  margin-top: 6em;
+  padding-top: 0;
+  margin-top: 2em;
   border-top: solid 1px var(--bg1);
 }
 
