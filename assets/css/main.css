@@ -1584,6 +1584,10 @@ header.style1 p {
   line-height: 1.5em;
 }
 
+#main header.style1 p{
+  color: var(--accent);
+}
+
 /* Table */
 
 table {
