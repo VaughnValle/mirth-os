@@ -1814,7 +1814,7 @@ button.style2,
 .button.style2 {
   background: none;
   color: var(--fg2);
-  box-shadow: inset 0px 0px 6px 0px var(--accent);
+  border: 1px solid var(--accent);
 }
 
 input[type="button"].style2:hover,
@@ -3264,11 +3264,11 @@ input::placeholder{
   }
   
   #intro .intro_r.flex-right{
-    margin-top: 5em;
+    margin-top: 2em;
   }
 
   .themes .button.large{
-    font-size: 0.9em;
+    font-size: 0.75em;
   }
 
   #int-container .actions{
@@ -3277,5 +3277,9 @@ input::placeholder{
 
   #int-container .actions a{
     margin-top: 2em;
+  }
+
+  #tryme {
+    font-size: 1.1em;
   }
 }
