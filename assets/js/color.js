@@ -57,7 +57,7 @@ function cerulean(){
   document.documentElement.style.setProperty("--fg3", "#439de8");
   document.documentElement.style.setProperty("--accent", "#435061");
   document.documentElement.style.setProperty("--accent-hover", "#549fdd");
-  document.documentElement.style.setProperty("--footer-input-bg", "#3a4756");
+  document.documentElement.style.setProperty("--footer-input-bg", "#4a5b6d");
   document.documentElement.style.setProperty("--border", "#A7D4FA");
   document.documentElement.style.setProperty("--shadow", "#A7d4a");
 }
