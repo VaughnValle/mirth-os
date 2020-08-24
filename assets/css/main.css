@@ -3257,11 +3257,25 @@ input::placeholder{
 #intro li.button.style3 {
   padding-top: 0;
 }
-/*
-#highlights{
-  text-shadow:
-  -1px -1px 0 #3a4756,
-  1px -1px 0 #3a4756,
-  -1px 1px 0 #3a4756,
-  1px 1px 0 #3a4756;
-} /*
+
+@media screen and (max-width: 737px){
+  #intro{
+    height: 120vh;
+  }
+  
+  #intro .intro_r.flex-right{
+    margin-top: 5em;
+  }
+
+  .themes .button.large{
+    font-size: 0.9em;
+  }
+
+  #int-container .actions{
+    display: none;
+  }
+
+  #int-container .actions a{
+    margin-top: 2em;
+  }
+}
