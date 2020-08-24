@@ -2509,7 +2509,7 @@ ul.actions.special {
 }
 
 #footer .feature-list h3:before {
-  background: #3d4249 url("images/overlay.png");
+  background: var(--accent-hover) url("images/overlay.png");
 }
 
 /* Copyright */
@@ -2534,8 +2534,6 @@ ul.actions.special {
   display: inline-block;
   margin-left: 1em;
   padding-left: 1em;
-  border-left: solid 1px var(--accent);
-  border-left-color: var(--fg1);
 }
 
 #copyright ul li:first-child {
@@ -3254,6 +3252,15 @@ input::placeholder{
 
 #intro li.button.style3 {
   padding-top: 0;
+}
+
+sup{
+  font-size: 0.6em;
+  font-weight: 800;
+}
+
+#copyright li{
+  word-spacing: 0.3em;
 }
 
 @media screen and (max-width: 737px){
