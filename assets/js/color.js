@@ -1,78 +1,79 @@
-document.getElementById("elek-bt").addEventListener("click", elektro);
+var img_tag = document.getElementById("showcase");
+var lush_bt = document.getElementById("lush-bt");
+var kofu_bt = document.getElementById("kofu-bt");
+var ceru_bt = document.getElementById("ceru-bt");
+var elek_bt = document.getElementById("elek-bt");
 
-/*
-const theme = {
-  elektro: {
-    "--bg1": "#ee00ff",
-    "--bg1-active": "#00ffff",
-    "--bg2": "#ee00ff",
-    "--bg3": "#00ffff",
-    "--fg1": "#00ffff",
-    "--fg2": "#00ffff",
-    "--accent": "#e00fff",
-    "--accent-hover": "#ee00ff",
-    "--footer-input-bg": "#ee00ff",
-    "--shadow": "#00ffff"
-  }
-};
-*/
+var images = ["images/kofuku.gif","images/kofu-gif.gif","images/ceru-gif.gif","images/elek-gif.gif"];
+
+lush_bt.addEventListener("click", lush);
+kofu_bt.addEventListener("click", kofuku);
+ceru_bt.addEventListener("click", cerulean);
+elek_bt.addEventListener("click", elektro);
+
+function lush(){
+  img_tag.src = images[1];
+  document.documentElement.style.setProperty("--bg1", "#262932");
+  document.documentElement.style.setProperty("--bg1-active", "#3e424a");
+  document.documentElement.style.setProperty("--bg2", "#f6f6f6");
+  document.documentElement.style.setProperty("--bg3", "#f3f3f3");
+  document.documentElement.style.setProperty("--fg1", "#f3f3f3");
+  document.documentElement.style.setProperty("--fg2", "#30333a");
+  document.documentElement.style.setProperty("--fg3", "#262932");
+  document.documentElement.style.setProperty("--accent", "#262932");
+  document.documentElement.style.setProperty("--accent-hover", "#50545b");
+  document.documentElement.style.setProperty("--footer-input-bg", "#ccc");
+  document.documentElement.style.setProperty("--border", "#fff");
+  document.documentElement.style.setProperty("--shadow", "#1a000000");
+
+}
+
+
+function kofuku(){
+  img_tag.src = images[1];
+  document.documentElement.style.setProperty("--bg1", "#262932");
+  document.documentElement.style.setProperty("--bg1-active", "#3e424a");
+  document.documentElement.style.setProperty("--bg2", "#f6f6f6");
+  document.documentElement.style.setProperty("--bg3", "#f3f3f3");
+  document.documentElement.style.setProperty("--fg1", "#f3f3f3");
+  document.documentElement.style.setProperty("--fg2", "#30333a");
+  document.documentElement.style.setProperty("--fg3", "#262932");
+  document.documentElement.style.setProperty("--accent", "#262932");
+  document.documentElement.style.setProperty("--accent-hover", "#50545b");
+  document.documentElement.style.setProperty("--footer-input-bg", "#ccc");
+  document.documentElement.style.setProperty("--border", "#fff");
+  document.documentElement.style.setProperty("--shadow", "#1a000000");
+
+}
+
+function cerulean(){
+  img_tag.src = images[2];
+  document.documentElement.style.setProperty("--bg1", "#3a4756");
+  document.documentElement.style.setProperty("--bg1-active", "#A7D4FA");
+  document.documentElement.style.setProperty("--bg2", "#A7D4FA");
+  document.documentElement.style.setProperty("--bg3", "#dddddd");
+  document.documentElement.style.setProperty("--fg1", "#A7D4FA");
+  document.documentElement.style.setProperty("--fg2", "#41546b");
+  document.documentElement.style.setProperty("--fg3", "#439de8");
+  document.documentElement.style.setProperty("--accent", "#435061");
+  document.documentElement.style.setProperty("--accent-hover", "#549fdd");
+  document.documentElement.style.setProperty("--footer-input-bg", "#3a4756");
+  document.documentElement.style.setProperty("--border", "#A7D4FA");
+  document.documentElement.style.setProperty("--shadow", "#A7d4a");
+}
 
 function elektro() {
-  document.documentElement.style.setProperty('--bg1', '#07001d');
-  document.documentElement.style.setProperty('--bg1-active', '#00ffff');
-  document.documentElement.style.setProperty('--bg2', '#00ffff');
-  document.documentElement.style.setProperty('--bg3', '#ee00ff');
-  document.documentElement.style.setProperty('--fg1', '#00ffff');
-  document.documentElement.style.setProperty('--fg2', '#ee00ff');
-  document.documentElement.style.setProperty('--fg3', '#00ffff');
-  document.documentElement.style.setProperty('--accent', '#ee00ff');
-  document.documentElement.style.setProperty('--accent-hover', '#eb50fc');
-  document.documentElement.style.setProperty('--footer-input-bg', '#ee00ff');
-  document.documentElement.style.setProperty('--border', '#ee00ff');
-  document.documentElement.style.setProperty('--shadow', '#00ffff');
-
+  img_tag.src = images[3];
+  document.documentElement.style.setProperty("--bg1", "#07001d");
+  document.documentElement.style.setProperty("--bg1-active", "#00cece");
+  document.documentElement.style.setProperty("--bg2", "#00cece");
+  document.documentElement.style.setProperty("--bg3", "#9900aa");
+  document.documentElement.style.setProperty("--fg1", "#00cece");
+  document.documentElement.style.setProperty("--fg2", "#9900aa");
+  document.documentElement.style.setProperty("--fg3", "#00cece");
+  document.documentElement.style.setProperty("--accent", "#9900aa");
+  document.documentElement.style.setProperty("--accent-hover", "#c000d6");
+  document.documentElement.style.setProperty("--footer-input-bg", "#9900aa");
+  document.documentElement.style.setProperty("--border", "#9900aa");
+  document.documentElement.style.setProperty("--shadow", "#00cece");
 }
-
-/*
-function useTheme(themeChoice) {
- document.documentElement.style.setProperty(
-  '--bg1', theme\[themeChoice\]['--bg1']
- );
- document.documentElement.style.setProperty(
-  '--bg1-active',
-  theme\[themeChoice\]['--bg1-active']
- );
- document.documentElement.style.setProperty(
-  '--bg2',
-  theme\[themeChoice\]['--bg2']
- );
- document.documentElement.style.setProperty(
-  '--bg3',
-  theme\[themeChoice\]['--bg3']
- );
- document.documentElement.style.setProperty(
-  '--fg1',
-  theme\[themeChoice\]['--fg1']
- );
- document.documentElement.style.setProperty(
-  '--fg2',
-  theme\[themeChoice\]['--fg2']
- );
- document.documentElement.style.setProperty(
-  '--accent',
-  theme\[themeChoice\]['--accent']
- );
- document.documentElement.style.setProperty(
-  '--accent-hover',
-  theme\[themeChoice\]['--accent-hover']
- );
- document.documentElement.style.setProperty(
-  '--accent-hover',
-  theme\[themeChoice\]['--accent-hover']
- );
- document.documentElement.style.setProperty(
-  '--shadow',
-  theme\[themeChoice\]['--shadow']
- );
-}
-*/
