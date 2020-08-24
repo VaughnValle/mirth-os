@@ -1565,7 +1565,6 @@ article:last-child {
 
 header.style1 {
   text-align: center;
-  padding: 3em 0 3em 0;
 }
 
 header.style1 h2 {
@@ -1941,7 +1940,6 @@ ul.actions.special {
 /* Feature List */
 
 .feature-list {
-  max-width: 58em;
   margin-left: auto;
   margin-right: auto;
   position: relative;
