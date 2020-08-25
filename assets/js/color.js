@@ -4,7 +4,7 @@ var kofu_bt = document.getElementById("kofu-bt");
 var ceru_bt = document.getElementById("ceru-bt");
 var elek_bt = document.getElementById("elek-bt");
 
-var images = ["images/kofuku.gif","images/kofu-gif.gif","images/ceru-gif.gif","images/elek-gif.gif"];
+var images = ["images/lush-gif.webm","images/kofuku-gif.webm","images/cerulean-gif.webm","images/elektropunk-gif.webm"];
 
 lush_bt.addEventListener("click", lush);
 kofu_bt.addEventListener("click", kofuku);
@@ -12,7 +12,7 @@ ceru_bt.addEventListener("click", cerulean);
 elek_bt.addEventListener("click", elektro);
 
 function lush(){
-  img_tag.src = images[1];
+  img_tag.src = images[0];
   document.documentElement.style.setProperty("--bg1", "#262932");
   document.documentElement.style.setProperty("--bg1-active", "#3e424a");
   document.documentElement.style.setProperty("--bg2", "#f6f6f6");
@@ -27,24 +27,23 @@ function lush(){
   document.documentElement.style.setProperty("--shadow", "#1a000000");
 
 }
-
 
 function kofuku(){
   img_tag.src = images[1];
-  document.documentElement.style.setProperty("--bg1", "#262932");
+  document.documentElement.style.setProperty("--bg1", "#0F1B1F");
   document.documentElement.style.setProperty("--bg1-active", "#3e424a");
-  document.documentElement.style.setProperty("--bg2", "#f6f6f6");
-  document.documentElement.style.setProperty("--bg3", "#f3f3f3");
-  document.documentElement.style.setProperty("--fg1", "#f3f3f3");
-  document.documentElement.style.setProperty("--fg2", "#30333a");
-  document.documentElement.style.setProperty("--fg3", "#262932");
-  document.documentElement.style.setProperty("--accent", "#262932");
+  document.documentElement.style.setProperty("--bg2", "#DCDDB6");
+  document.documentElement.style.setProperty("--bg3", "#DCDDB6");
+  document.documentElement.style.setProperty("--fg1", "#DCDDB6");
+  document.documentElement.style.setProperty("--fg2", "#192a30");
+  document.documentElement.style.setProperty("--fg3", "#0F1B1F");
+  document.documentElement.style.setProperty("--accent", "#0F1B1F");
   document.documentElement.style.setProperty("--accent-hover", "#50545b");
-  document.documentElement.style.setProperty("--footer-input-bg", "#ccc");
-  document.documentElement.style.setProperty("--border", "#fff");
+  document.documentElement.style.setProperty("--footer-input-bg", "#DCDDB6");
+  document.documentElement.style.setProperty("--border", "#DCDDB6");
   document.documentElement.style.setProperty("--shadow", "#1a000000");
-
 }
+
 
 function cerulean(){
   img_tag.src = images[2];

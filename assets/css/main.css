@@ -1709,6 +1709,12 @@ form ::-moz-focus-inner {
   width: 100%;
 }
 
+.image video {
+  display: block;
+  width: 100%;
+}
+
+
 .image.fit {
   display: block;
   width: 100%;
@@ -3179,7 +3185,7 @@ ul.actions.special {
   min-width: 300px;
 }
 
-.flex-left img {
+.flex-left video {
   display: block;
   margin-left: 5%;
   max-height: 100%;
@@ -3265,7 +3271,7 @@ sup{
 
 @media screen and (max-width: 737px){
   #intro{
-    height: 120vh;
+    padding-bottom: 50%;
   }
   
   #intro .intro_r.flex-right{
